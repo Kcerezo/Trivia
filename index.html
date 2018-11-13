@@ -4,82 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="Assets/css/style.css"
-    ><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-   
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
- 
+
 <title>Trivia</title>
-<script scr= "app.js"></script>
-<div id= "quiz"></div>
+<body>
+    <div class="homepage-hero-module">
+        <div class="video-container">
+            <div class="filter"></div>
+            
+    <video autoplay muted loop id="myVideo">
+            <source src="Assets/images/Two-Swimmers/Two-Swimmers.mp4">
+    </video>
 
-<body background="Assets/images/bright-abstract-vector-background.jpg">
-
-    <h1>Trivia Time!!</h1>
-
+    <div id= "quiz"></div>
+    <div class="contentLanding">
+        <h1 class="display-4" id="titleLanding">Trivia Time!!</h1>
+        <h2> You have 25 secords to answer the following questions. </h2>
+        <h2>Ready, Set, GO!</h2>
     
- <p id="remaining-time" class="lead">Remaining Time: <span id="timer"></span></p>
-
-    <div class= "par"></div>
-
-<p>1. The Declaration of Independence of the United States dates back to July 14, 1831.</p>
-    <form>
-        <input type="radio" name="choice" value="true" checked> True<br>
-        <input type="radio" name="choice" value="false"> False<br>
-  </form>
-<p> 2. The national anthem of the United States is called In God We Trust?</p>
-    <form>
-        <input type="radio" name="choice" value="true" checked> True<br>
-        <input type="radio" name="choice" value="false"> False<br>
-    </form>
-<p>3. The United States has 52 states.</p>
-    <form>
-        <input type="radio" name="choice" value="true" checked> True<br>
-        <input type="radio" name="choice" value="false"> False<br>
-    </form>
-<p>4. Jackie Robinson was the first African-American to play in the National League (baseball).</p>
-    <form>
-        <input type="radio" name="choice" value="true" checked> True<br>
-        <input type="radio" name="choice" value="false"> False<br>
-    </form>
-<p> 5. Including dependent territories, the United States covers 8 time zones.</p>
-    <form>
-        <input type="radio" name="choice" value="true" checked> True<br>
-        <input type="radio" name="choice" value="false"> False<br>
-    </form>
-<p> 6. The United States bought Alaska from Russia.</p>
-    <form>
-        <input type="radio" name="choice" value="true" checked> True<br>
-        <input type="radio" name="choice" value="false"> False<br>
-    </form>
-<p> 7. Texas is the largest American state.</p>
-    <form>
-        <input type="radio" name="choice" value="true" checked> True<br>
-        <input type="radio" name="choice" value="false"> False<br>
-    </form>
-<p> 8. The bald eagle is the National Bird of the United States.</p>
-    <form>
-        <input type="radio" name="choice" value="true" checked> True<br>
-        <input type="radio" name="choice" value="false"> False<br>
-    </form>
-<p> 9. The bald eagle is the National Bird of the United States.</p>
-    <form>
-        <input type="radio" name="choice" value="true" checked> True<br>
-        <input type="radio" name="choice" value="false"> False<br>
-    </form>
-<p> 10. It was Patrick Henry who said, 'Give me liberty, or give me death!'</p>
-    <form>
-        <input type="radio" name="choice" value="true" checked> True<br>
-        <input type="radio" name="choice" value="false"> False<br>
-    </form>
-    <label>
-
-       
-<button onClick="finish()">Finish</button>
-
-<div id= "results"></div>
+    <div class="form-group">
+        <label for="passport">1. The Declaration of Independence of the United States dates back to July 14, 1831.</label>
+            <select class="form-control" id="survey-weatherPref">
+                <option>True</option>
+                <option>False</option>
+            </select>
+    </div>
+        <div class="form-group">
+            <label for="passport">2. The national anthem of the United States is called In God We Trust?</label>
+                <select class="form-control" id="survey-enviroPref">
+                    <option>True</option>
+                    <option>False</option>
+                </select>
+    </div>
+        <div class="form-group">
+            <label for="passport">3. The United States has 52 states.</label>
+                <select class="form-control" id="survey-alchoPref">
+                    <option>True</option>
+                    <option>False</option>
+                </select>
+    </div>
+        <div class="form-group">
+            <label for="passport">4. Jackie Robinson was the first African-American to play in the National League (baseball).</label>
+                <select class="form-control" id="survey-alchoPref">
+                    <option>True</option>
+                    <option>False</option>
+                </select>
+        </div>
+    <div class="form-group">
+            <label for="passport">5. Including dependent territories, the United States covers 8 time zones.</label>
+                <select class="form-control" id="survey-alchoPref">
+                    <option>True</option>
+                    <option>False</option>
+                </select>
+    </div>
+        <div class="form-group">
+            <label for="passport"> 6. The United States bought Alaska from Russia.</label>
+                <select class="form-control" id="survey-alchoPref">
+                    <option>True</option>
+                    <option>False</option>
+                </select>
+    </div>
+        <div class="form-group">
+            <label for="passport">7. Texas is the largest American state.</label>
+                <select class="form-control" id="survey-alchoPref">
+                    <option>True</option>
+                    <option>False</option>
+                </select>
+    </div>
+        <div class="form-group">
+            <label for="passport">8. The bald eagle is the National Bird of the United States.</label>
+                <select class="form-control" id="survey-alchoPref">
+                    <option>True</option>
+                    <option>False</option>
+                </select>
+    </div>
+        <div class="form-group">
+            <label for="passport">9. The bald eagle is the National Bird of the United States.</label>
+                <select class="form-control" id="survey-alchoPref">
+                    <option>True</option>
+                    <option>False</option>
+                </select>
+    </div>
+        <div class="form-group">
+            <label for="passport">10. It was Patrick Henry who said, 'Give me liberty, or give me death!'</label>
+                <select class="form-control" id="survey-alchoPref">
+                    <option>True</option>
+                    <option>False</option>
+                </select>
+    </div>
+        <p id="remaining-time" class="lead">Remaining Time: <span id="timer"></span></p>
+            <button onClick="finish()">Finish</button>
+    <div id= "results"></div>
 </div> 
-</div> 
+
+<script src= "Assets/javascript/text.js"></script>
+
 </body>
 </html>
